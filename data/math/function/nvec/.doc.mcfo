@@ -1,0 +1,8 @@
+#math:nvec/doc.mcfo
+
+# nvec临时对象
+_this:{
+	<nvec_x,int,1w>,
+	<nvec_y,int,1w>,
+	<nvec_z,int,1w>
+}

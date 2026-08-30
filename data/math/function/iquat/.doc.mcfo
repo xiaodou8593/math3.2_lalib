@@ -1,0 +1,9 @@
+#math:iquat/doc.mcfo
+
+# iquat的临时对象
+_this: {
+	<iquat_x,int,1w>,
+	<iquat_y,int,1w>,
+	<iquat_z,int,1w>,
+	<iquat_w,int,1w>
+}

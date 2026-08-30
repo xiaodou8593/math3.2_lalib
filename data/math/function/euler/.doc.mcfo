@@ -1,0 +1,10 @@
+#math:euler/doc.mcfo
+
+# 欧拉角的临时对象
+_this:{
+	<phi,int,1w>,
+	<theta,int,1w>,
+	<psi,int,1w>
+}
+
+其中phi表示俯仰角，theta表示偏航角，psi表示横滚角

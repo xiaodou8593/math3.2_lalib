@@ -1,0 +1,28 @@
+#math:rot/test/.doc.mcfo
+
+# 测试网格的临时对象
+_this: {
+	position: {
+		<x,int,1w>,
+		<y,int,1w>,
+		<z,int,1w>
+	},
+	rotation: {
+		<theta,int,1w>,
+		<phi,int,1w>
+	},
+	size: <n,int,1>,
+	select: {
+		<u,int,1w>,
+		<v,int,1w>
+	},
+	scale: {
+		<scale_u,int,1w>,
+		<scale_v,int,1w>
+	},
+	target: {
+		<vec_x,int,1w>,
+		<vec_y,int,1w>,
+		<vec_z,int,1w>
+	}
+}

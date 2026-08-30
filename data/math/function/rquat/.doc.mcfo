@@ -1,0 +1,9 @@
+#math:rquat/doc.mcfo
+
+# rquat的临时对象
+_this: {
+	<rquat_x,int,1w>,
+	<rquat_y,int,1w>,
+	<rquat_z,int,1w>,
+	<rquat_w,int,1w>
+}

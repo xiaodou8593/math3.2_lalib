@@ -1,0 +1,9 @@
+#math:rot/doc.mcfo
+
+# 朝向角的临时对象
+rot:{
+	<phi,int,1w>,
+	<theta,int,1w>
+}
+
+其中phi表示俯仰角，theta表示偏航角

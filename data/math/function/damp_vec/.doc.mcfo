@@ -1,0 +1,18 @@
+#math:damp_vec/doc.mcfo
+
+# damp_vec的临时对象
+_this:{
+	<damp_k,int>,
+	<damp_b,int>,
+	<damp_f,int>,
+	{
+		<damp_x, int, 10000>,
+		<damp_y, int, 10000>,
+		<damp_z, int, 10000>
+	},
+	{
+		<damp_vx, int, 10000>,
+		<damp_vy, int, 10000>,
+		<damp_vz, int, 10000>
+	}
+}
