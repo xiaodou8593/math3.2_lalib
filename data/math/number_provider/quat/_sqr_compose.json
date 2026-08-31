@@ -1,0 +1,9 @@
+{
+	"type":"sum",
+	"operands":[
+		"math:quat/_sqr_x",
+		"math:quat/_sqr_y",
+		"math:quat/_sqr_z",
+		"math:quat/_sqr_w"
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"type":"product",
+	"operands":[
+		-0.5,
+		"math:quat/_norm_iter_3",
+		{
+			"type":"sum",
+			"operands":[
+				-3,
+				{
+					"type":"product",
+					"operands":[
+						"math:quat/_sqr",
+						"math:quat/_norm_iter_3",
+						"math:quat/_norm_iter_3"
+					]
+				}
+			]
+		}
+	]
+}
