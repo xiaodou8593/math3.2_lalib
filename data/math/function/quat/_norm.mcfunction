@@ -1,6 +1,6 @@
 #math:quat/_norm
 # 把临时四元数单位化
-# 输入{<quat_x,int>, <quat_y,int>, <quat_z,int>, <quat_w,int>}
+# 输入_this{<quat_x,int,1w>, <quat_y,int,1w>, <quat_z,int,1w>, <quat_w,int,1w>}
 # 需要传入世界实体为执行者
 
 scoreboard players operation vec_x int = quat_x int

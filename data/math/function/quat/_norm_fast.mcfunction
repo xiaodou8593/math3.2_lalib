@@ -2,6 +2,7 @@
 # 单位化四元数
 # 需要保证四元数模长接近1
 # 算法来源：ethanout
+# 输入_this{<quat_x,int,1w>, <quat_y,int,1w>, <quat_z,int,1w>, <quat_w,int,1w>}
 
 scoreboard players operation sstemp_s int = quat_x int
 scoreboard players operation sstemp_s int *= sstemp_s int

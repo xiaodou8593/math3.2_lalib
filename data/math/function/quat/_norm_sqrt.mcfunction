@@ -1,6 +1,6 @@
 #math:quat/_norm_sqrt
 # 把临时四元数单位化
-# 输入{<quat_x,int>, <quat_y,int>, <quat_z,int>, <quat_w,int>}
+# 输入_this{<quat_x,int,1w>, <quat_y,int,1w>, <quat_z,int,1w>, <quat_w,int,1w>}
 
 scoreboard players operation inp int = quat_x int
 scoreboard players operation inp int *= inp int
