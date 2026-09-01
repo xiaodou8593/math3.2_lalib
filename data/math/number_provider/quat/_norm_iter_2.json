@@ -10,7 +10,7 @@
 				{
 					"type":"product",
 					"operands":[
-						"math:quat/_sqr",
+						"math:quat/_sqr_cache",
 						"math:quat/_norm_iter_1",
 						"math:quat/_norm_iter_1"
 					]

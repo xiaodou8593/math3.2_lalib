@@ -6,7 +6,7 @@
 			"type":"sum",
 			"operands":[
 				-3,
-				"math:quat/_sqr"
+				"math:quat/_sqr_cache"
 			]
 		}
 	]
