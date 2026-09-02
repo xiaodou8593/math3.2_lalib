@@ -7,9 +7,9 @@
 execute store result score sstemp_s int run compute default math:quat/_sqr 100000000
 execute store result score sstemp_x int run compute default math:quat/_norm_r 10000
 scoreboard players operation quat_x int *= sstemp_x int
-scoreboard players operation quat_y int *= sstemp_y int
-scoreboard players operation quat_z int *= sstemp_z int
-scoreboard players operation quat_w int *= sstemp_w int
+scoreboard players operation quat_y int *= sstemp_x int
+scoreboard players operation quat_z int *= sstemp_x int
+scoreboard players operation quat_w int *= sstemp_x int
 scoreboard players operation quat_x int /= 10000 int
 scoreboard players operation quat_y int /= 10000 int
 scoreboard players operation quat_z int /= 10000 int
