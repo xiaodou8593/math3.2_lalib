@@ -1,6 +1,6 @@
 {
-	"type":"product",
-	"operands":[
+	"type":"mul",
+	"inputs":[
 		{
 			"type":"score",
 			"target":{
@@ -11,12 +11,12 @@
 			"scale":0.00000001
 		},
 		{
-			"type":"sum",
-			"operands":[
+			"type":"add",
+			"inputs":[
 				1.5,
 				{
-					"type":"product",
-					"operands":[
+					"type":"mul",
+					"inputs":[
 						{
 							"type":"score",
 							"target":{
