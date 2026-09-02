@@ -1,15 +1,15 @@
 {
-	"type":"mul",
-	"inputs":[
+	"type": "mul",
+	"inputs": [
 		-0.5,
 		"math:quat/_norm_iter_1",
 		{
-			"type":"add",
-			"inputs":[
+			"type": "add",
+			"inputs": [
 				-3,
 				{
-					"type":"mul",
-					"inputs":[
+					"type": "mul",
+					"inputs": [
 						"math:quat/_sqr_cache",
 						"math:quat/_norm_iter_1",
 						"math:quat/_norm_iter_1"

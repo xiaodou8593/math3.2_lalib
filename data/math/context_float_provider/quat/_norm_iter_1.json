@@ -1,10 +1,10 @@
 {
-	"type":"mul",
-	"inputs":[
+	"type": "mul",
+	"inputs": [
 		-0.5,
 		{
-			"type":"add",
-			"inputs":[
+			"type": "add",
+			"inputs": [
 				-3,
 				"math:quat/_sqr_cache"
 			]
