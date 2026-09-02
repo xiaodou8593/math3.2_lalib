@@ -1,6 +1,6 @@
 {
-	"type":"sum",
-	"operands":[
+	"type":"add",
+	"inputs":[
 		"math:quat/_sqr_x",
 		"math:quat/_sqr_y",
 		"math:quat/_sqr_z",

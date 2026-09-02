@@ -1,15 +1,15 @@
 {
-	"type":"product",
-	"operands":[
+	"type":"mul",
+	"inputs":[
 		-0.5,
 		"math:quat/_norm_iter_3",
 		{
-			"type":"sum",
-			"operands":[
+			"type":"add",
+			"inputs":[
 				-3,
 				{
-					"type":"product",
-					"operands":[
+					"type":"mul",
+					"inputs":[
 						"math:quat/_sqr_cache",
 						"math:quat/_norm_iter_3",
 						"math:quat/_norm_iter_3"

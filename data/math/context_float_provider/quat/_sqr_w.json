@@ -1,6 +1,6 @@
 {
-	"type":"product",
-	"operands":[
+	"type":"mul",
+	"inputs":[
 		{
 			"type":"score",
 			"target":{
@@ -14,10 +14,10 @@
 			"type":"score",
 			"target":{
 				"type":"fixed",
-				"name":"sstemp_x"
+				"name":"quat_w"
 			},
 			"score":"int",
-			"scale":0.00000001
+			"scale":0.0001
 		}
 	]
 }
