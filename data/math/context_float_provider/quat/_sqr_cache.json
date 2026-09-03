@@ -1,12 +1,17 @@
 {
-	"type": "from_int",
-	"input": {
-		"type": "score",
-		"target": {
-			"type": "fixed",
-			"name": "sstemp_s"
-		},
-		"score": "int",
-		"scale": 1e-08
-	}
+  "type": "mul",
+  "inputs": [
+    1e-08,
+    {
+      "type": "from_int",
+      "input": {
+        "type": "score",
+        "target": {
+          "type": "fixed",
+          "name": "sstemp_s"
+        },
+        "score": "int"
+      }
+    }
+  ]
 }

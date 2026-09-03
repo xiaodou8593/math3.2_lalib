@@ -1,9 +1,9 @@
 {
-	"type": "add",
-	"inputs": [
-		"math:quat/_sqr_x",
-		"math:quat/_sqr_y",
-		"math:quat/_sqr_z",
-		"math:quat/_sqr_w"
-	]
+  "type": "add",
+  "inputs": [
+    "math:quat/_sqr_x",
+    "math:quat/_sqr_y",
+    "math:quat/_sqr_z",
+    "math:quat/_sqr_w"
+  ]
 }
