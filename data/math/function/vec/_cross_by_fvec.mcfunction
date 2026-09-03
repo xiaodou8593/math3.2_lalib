@@ -2,24 +2,8 @@
 # 计算向量叉乘
 # 输入fvec{<fvec_x,int,1w>, <fvec_y,int,1w>, <fvec_z,int,1w>}
 
-scoreboard players operation sstempx int = vec_x int
-scoreboard players operation vec_x int = fvec_y int
-scoreboard players operation vec_x int *= vec_z int
-scoreboard players operation sstemp0 int = vec_y int
-scoreboard players operation sstemp0 int *= fvec_z int
-scoreboard players operation vec_x int -= sstemp0 int
-scoreboard players operation vec_x int /= 10000 int
-
-scoreboard players operation sstempy int = vec_y int
-scoreboard players operation vec_y int = fvec_z int
-scoreboard players operation vec_y int *= vec_x int
-scoreboard players operation sstemp0 int = vec_z int
-scoreboard players operation sstemp0 int *= fvec_x int
-scoreboard players operation vec_y int -= sstemp0 int
-scoreboard players operation vec_y int /= 10000 int
-
-scoreboard players operation vec_z int = sstempy int
-scoreboard players operation vec_z int *= fvec_x int
-scoreboard players operation sstempx int *= fvec_y int
-scoreboard players operation vec_z int -= sstempx int
-scoreboard players operation vec_z int /= 10000 int
+execute store result score sstemp_x int run compute default float math:vec/_cross_fvec_x -10000
+execute store result score sstemp_y int run compute default float math:vec/_cross_fvec_y -10000
+execute store result score vec_z int run compute default float math:vec/_cross_fvec_z -10000
+scoreboard players operation vec_x int = sstemp_x int
+scoreboard players operation vec_y int = sstemp_y int

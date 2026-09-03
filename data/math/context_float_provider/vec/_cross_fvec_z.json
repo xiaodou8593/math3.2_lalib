@@ -1,83 +1,61 @@
 {
-  "type": "add",
-  "inputs": [
-    {
-      "type": "mul",
-      "inputs": [
-        {
-          "type": "mul",
-          "inputs": [
-            0.0001,
-            {
-              "type": "from_int",
-              "input": {
-                "type": "score",
-                "target": {
-                  "type": "fixed",
-                  "name": "vec_x"
-                },
-                "score": "int"
-              }
-            }
-          ]
-        },
-        {
-          "type": "mul",
-          "inputs": [
-            0.0001,
-            {
-              "type": "from_int",
-              "input": {
-                "type": "score",
-                "target": {
-                  "type": "fixed",
-                  "name": "fvec_y"
-                },
-                "score": "int"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "mul",
-      "inputs": [
-        {
-          "type": "mul",
-          "inputs": [
-            0.0001,
-            {
-              "type": "from_int",
-              "input": {
-                "type": "score",
-                "target": {
-                  "type": "fixed",
-                  "name": "fvec_x"
-                },
-                "score": "int"
-              }
-            }
-          ]
-        },
-        {
-          "type": "mul",
-          "inputs": [
-            -0.0001,
-            {
-              "type": "from_int",
-              "input": {
-                "type": "score",
-                "target": {
-                  "type": "fixed",
-                  "name": "vec_y"
-                },
-                "score": "int"
-              }
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"type":"add",
+	"inputs":[
+		{
+			"type":"mul",
+			"inputs":[
+				0.00000001,
+				{
+					"type":"from_int",
+					"input":{
+						"type":"score",
+						"target":{
+							"type":"fixed",
+							"name":"vec_x"
+						},
+						"score":"int"
+					}
+				},
+				{
+					"type":"from_int",
+					"input":{
+						"type":"score",
+						"target":{
+							"type":"fixed",
+							"name":"fvec_y"
+						},
+						"score":"int"
+					}
+				}
+			]
+		},
+		{
+			"type":"mul",
+			"inputs":[
+				-0.00000001,
+				{
+					"type":"from_int",
+					"input":{
+						"type":"score",
+						"target":{
+							"type":"fixed",
+							"name":"vec_y"
+						},
+						"score":"int"
+					}
+				},
+				{
+					"type":"from_int",
+					"input":{
+						"type":"score",
+						"target":{
+							"type":"fixed",
+							"name":"fvec_x"
+						},
+						"score":"int"
+					}
+				}
+			]
+		}
+	]
 }
