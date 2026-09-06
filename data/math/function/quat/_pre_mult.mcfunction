@@ -3,54 +3,7 @@
 # 输入iquat{<iquat_x,int,1w>, <iquat_y,int,1w>, <iquat_z,int,1w>, <iquat_w,int,1w>}
 # 输出rquat{<rquat_x,int,1w>, <rquat_y,int,1w>, <rquat_z,int,1w>, <rquat_w,int,1w>}
 
-scoreboard players operation rquat_x int = quat_w int
-scoreboard players operation rquat_x int *= iquat_x int
-scoreboard players operation sstempr int = quat_z int
-scoreboard players operation sstempr int *= iquat_y int
-scoreboard players operation rquat_x int -= sstempr int
-scoreboard players operation sstempr int = quat_x int
-scoreboard players operation sstempr int *= iquat_w int
-scoreboard players operation rquat_x int += sstempr int
-scoreboard players operation sstempr int = quat_y int
-scoreboard players operation sstempr int *= iquat_z int
-scoreboard players operation rquat_x int += sstempr int
-scoreboard players operation rquat_x int /= 10000 int
-
-scoreboard players operation rquat_y int = quat_w int
-scoreboard players operation rquat_y int *= iquat_y int
-scoreboard players operation sstempr int = quat_x int
-scoreboard players operation sstempr int *= iquat_z int
-scoreboard players operation rquat_y int -= sstempr int
-scoreboard players operation sstempr int = quat_y int
-scoreboard players operation sstempr int *= iquat_w int
-scoreboard players operation rquat_y int += sstempr int
-scoreboard players operation sstempr int = quat_z int
-scoreboard players operation sstempr int *= iquat_x int
-scoreboard players operation rquat_y int += sstempr int
-scoreboard players operation rquat_y int /= 10000 int
-
-scoreboard players operation rquat_z int = quat_w int
-scoreboard players operation rquat_z int *= iquat_z int
-scoreboard players operation sstempr int = quat_x int
-scoreboard players operation sstempr int *= iquat_y int
-scoreboard players operation rquat_z int += sstempr int
-scoreboard players operation sstempr int = quat_y int
-scoreboard players operation sstempr int *= iquat_x int
-scoreboard players operation rquat_z int -= sstempr int
-scoreboard players operation sstempr int = quat_z int
-scoreboard players operation sstempr int *= iquat_w int
-scoreboard players operation rquat_z int += sstempr int
-scoreboard players operation rquat_z int /= 10000 int
-
-scoreboard players operation rquat_w int = quat_w int
-scoreboard players operation rquat_w int *= iquat_w int
-scoreboard players operation sstempr int = quat_x int
-scoreboard players operation sstempr int *= iquat_x int
-scoreboard players operation rquat_w int -= sstempr int
-scoreboard players operation sstempr int = quat_y int
-scoreboard players operation sstempr int *= iquat_y int
-scoreboard players operation rquat_w int -= sstempr int
-scoreboard players operation sstempr int = quat_z int
-scoreboard players operation sstempr int *= iquat_z int
-scoreboard players operation rquat_w int -= sstempr int
-scoreboard players operation rquat_w int /= 10000 int
+execute store result score rquat_x int run compute default float math:quat/_pre_mult_x 10000
+execute store result score rquat_y int run compute default float math:quat/_pre_mult_y 10000
+execute store result score rquat_z int run compute default float math:quat/_pre_mult_z 10000
+execute store result score rquat_w int run compute default float math:quat/_pre_mult_w 10000
