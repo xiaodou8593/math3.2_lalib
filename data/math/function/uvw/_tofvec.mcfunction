@@ -3,32 +3,6 @@
 # 输入{<u,int>,<v,int>,<w,int>}
 # 输出{<fvec_x,int>,<fvec_y,int>,<fvec_z,int>}
 
-scoreboard players operation fvec_x int = ivec_x int
-scoreboard players operation fvec_x int *= u int
-scoreboard players operation sstemp int = jvec_x int
-scoreboard players operation sstemp int *= v int
-scoreboard players operation fvec_x int += sstemp int
-scoreboard players operation sstemp int = kvec_x int
-scoreboard players operation sstemp int *= w int
-scoreboard players operation fvec_x int += sstemp int
-scoreboard players operation fvec_x int /= 10000 int
-
-scoreboard players operation fvec_y int = ivec_y int
-scoreboard players operation fvec_y int *= u int
-scoreboard players operation sstemp int = jvec_y int
-scoreboard players operation sstemp int *= v int
-scoreboard players operation fvec_y int += sstemp int
-scoreboard players operation sstemp int = kvec_y int
-scoreboard players operation sstemp int *= w int
-scoreboard players operation fvec_y int += sstemp int
-scoreboard players operation fvec_y int /= 10000 int
-
-scoreboard players operation fvec_z int = ivec_z int
-scoreboard players operation fvec_z int *= u int
-scoreboard players operation sstemp int = jvec_z int
-scoreboard players operation sstemp int *= v int
-scoreboard players operation fvec_z int += sstemp int
-scoreboard players operation sstemp int = kvec_z int
-scoreboard players operation sstemp int *= w int
-scoreboard players operation fvec_z int += sstemp int
-scoreboard players operation fvec_z int /= 10000 int
+execute store result score fvec_x int run compute default float math:uvw/_tofvec_x 10000
+execute store result score fvec_y int run compute default float math:uvw/_tofvec_y 10000
+execute store result score fvec_z int run compute default float math:uvw/_tofvec_z 10000
