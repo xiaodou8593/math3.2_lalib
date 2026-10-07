@@ -1,0 +1,9 @@
+#math:quat_high/doc.mcfo
+
+# quat_high临时对象
+_this:{
+	<quat_high_x,int,10000w>,
+	<quat_high_y,int,10000w>,
+	<quat_high_z,int,10000w>,
+	<quat_high_w,int,10000w>
+}

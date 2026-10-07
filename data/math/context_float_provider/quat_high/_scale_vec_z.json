@@ -1,0 +1,21 @@
+{
+	"type":"mul",
+	"inputs":[
+		{
+			"type":"storage",
+			"storage":"math:io",
+			"path":"sstemp_len"
+		},
+		{
+			"type":"from_int",
+			"input":{
+				"type":"score",
+				"target":{
+					"type":"fixed",
+					"name":"quat_high_z"
+				},
+				"score":"int"
+			}
+		}
+	]
+}
