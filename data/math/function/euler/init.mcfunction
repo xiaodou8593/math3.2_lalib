@@ -1,4 +1,4 @@
-#math:rot/init
+#math:euler/init
 # math:_init_la调用
 
 scoreboard players set 160000 int 160000

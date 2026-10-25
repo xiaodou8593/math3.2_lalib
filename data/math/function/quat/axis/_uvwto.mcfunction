@@ -1,4 +1,4 @@
-#math:quat/axis/_uvwcto
+#math:quat/axis/_uvwto
 # 使用局部坐标指定旋转轴
 # 输入{<u,int>, <v,int>, <w,int>}
 

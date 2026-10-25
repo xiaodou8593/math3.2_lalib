@@ -1,4 +1,4 @@
-#math:euler/_to_iquat
+#math:euler/_to_iquat_high
 # 欧拉角转四元数
 # 输出quat_high{<quat_high_x,int,1ww>,<quat_high_y,int,1ww>,<quat_high_z,int,1ww>,<quat_high_w,int,1ww>}
 

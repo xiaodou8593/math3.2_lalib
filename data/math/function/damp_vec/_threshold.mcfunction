@@ -1,4 +1,4 @@
-#math:damp_vec/_energy
+#math:damp_vec/_threshold
 # 获取阻尼运动停止的能量阈值
 # 输出<res,int>
 

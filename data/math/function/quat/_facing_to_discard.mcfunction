@@ -1,4 +1,4 @@
-#math:quat/_facing_to_ex
+#math:quat/_facing_to_discard
 # 不推荐使用！
 # 输入执行朝向
 # 需要传入世界实体为执行者
